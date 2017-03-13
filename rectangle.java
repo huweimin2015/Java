@@ -12,6 +12,7 @@
  输出：
  输出2个正整数，中间用空格隔开，分别表示矩形的面积和周长，例如：40 26
 */
+/*
 public class rectangle{
 	public static void main(String[] args){
         
@@ -23,4 +24,20 @@ public class rectangle{
 
         //输出面积和周长 
 	}
+}
+*/
+import java.util.Scanner;
+public class  rectangle {
+    static int height,weight;
+    static int getArea(){        return height*weight;    }
+    static int getPerimeter(){        return 2*(height+weight);    }
+    public static void main(String[] args) {
+   // write your code here
+        Scanner input=new Scanner(System.in);
+        height=input.nextInt();
+        weight=input.nextInt();
+        System.out.print(getArea());
+        System.out.print(" ");
+        System.out.print(getPerimeter());
+    }
 }
